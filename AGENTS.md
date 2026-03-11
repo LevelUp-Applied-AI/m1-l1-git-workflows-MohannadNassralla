@@ -1,9 +1,9 @@
-# AGENTS.md — [FILL IN: Project Name] AI Agent Governance
+# AGENTS.md — [FILL IN: journalism project] AI Agent Governance
 
 > This file defines the rules, constraints, and boundaries for AI agents (Claude, Copilot, Cursor, etc.)
 > working in this repository. Any agent reading this file must follow the rules below before taking action.
 >
-> Last updated: [FILL IN: YYYY-MM-DD]
+> Last updated: [FILL IN: 2026-03-11]
 
 ---
 
@@ -67,3 +67,31 @@ that should never be taken autonomously. Consider:
 > - Never push to remote branches or open pull requests without explicit human instruction.
 > - Never modify `AGENTS.md`, `CHANGELOG.md`, or grading rubrics autonomously.
 > - If a task requires deleting tracked files, stop and ask for confirmation.
+
+
+## Testing Requirements
+
+All changes must pass `python test_environment.py` before committing.
+Any code added to `src/` must have a corresponding test in `tests/`
+that passes with `pytest tests/ -v`.
+
+## Secrets Policy
+
+Do not include API keys, database passwords, file paths containing
+personal data, or raw data content in any prompt. Never commit
+`.env`, `*.key`, or any file containing credentials.
+
+## Scope Boundaries
+
+Agents may edit files in `src/` and `notebooks/`.
+Do not modify `requirements.txt` without human review.
+Do not modify `setup.sh` without running and testing the result locally.
+Do not touch `.gitignore` without confirming the change doesn't
+accidentally exclude source files.
+
+## Reproducibility Standard
+
+All AI-assisted changes require local-first execution: the change
+must run locally and produce the expected output before it is
+committed or pushed. "The AI generated it" is not a substitute
+for running it.

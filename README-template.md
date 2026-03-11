@@ -1,4 +1,4 @@
-# [FILL IN: Project Title — a short, descriptive name for your project]
+# [FILL IN: journalism project — a short, descriptive name for your project]
 
 > [FILL IN: One-sentence description — what does this project do, for whom, and in what context?]
 
@@ -8,7 +8,7 @@
 
 [FILL IN: 2–4 sentences. What problem does this project address? Why is a reproducible environment important for this specific project? Who would use this repo and why?]
 
----
+It help employee in improve the news in any things they needed
 
 ## Tech Stack
 
@@ -31,8 +31,8 @@ cd [FILL IN: repo name]
 
 # Create and activate venv
 python -m venv .venv
-source .venv/bin/activate        # Mac/Linux / Git Bash
-# .venv\Scripts\activate.bat    # Windows CMD
+# source .venv/bin/activate        # Mac/Linux / Git Bash
+.venv\Scripts\activate.bat    # Windows CMD
 # .venv\Scripts\Activate.ps1    # Windows PowerShell
 
 # Install dependencies
@@ -48,7 +48,15 @@ bash setup.sh
 
 [FILL IN: How does a teammate (or AI agent) run this project? Be specific:
 - What command do they run first?
+   git checkout main
+   $ git pull origin main
+   $ git checkout -b integration/collab-setup
+
 - What output should they see?
+  pandas: 3.0.1
+  matplotlib: 3.10.8
+  Environment OK
+  Setup complete.
 - What do they do if setup fails?]
 
 ---

@@ -57,7 +57,8 @@ bash setup.sh
   matplotlib: 3.10.8
   Environment OK
   Setup complete.
-- What do they do if setup fails?]
+- What do they do if setup fails?
+  cheak venv
 
 ---
 

@@ -41,8 +41,16 @@
 ## Testing Requirements
 
 [FILL IN: What must an agent verify before proposing or completing a change? Be specific:
+set -euo pipefail
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python test_environment.py
+echo "Setup complete."
 - What test or verification commands must pass?
+every thing it's do  
 - What does "done" look like for this project?
+ test this file setup.sh
 - What is the minimum bar before an agent should consider a task complete?]
 
 **Example format:**

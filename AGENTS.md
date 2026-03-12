@@ -11,9 +11,23 @@
 
 [FILL IN: Describe what AI agents are authorized to do in this repo. Be specific:
 - Which files may an agent read, modify, or create?
+  requirements.txt
+setup.sh           
+ setup script
+ test_environment.py  
 - Which directories are in scope?
+  README.md         
+CHANGELOG.md      
+AGENTS.md
+requirements.txt
+setup.sh           
+ setup script
+ test_environment.py  
+ .gitignore   
 - What kinds of tasks can an agent perform autonomously?]
-
+AGENTS.md
+README.md         
+CHANGELOG.md
 **Example format:**
 > Agents may read any file in this repository. Agents may modify `requirements.txt`, `setup.sh`,
 > and files in `src/`. Agents may suggest changes to `README.md` but must not modify `AGENTS.md`
